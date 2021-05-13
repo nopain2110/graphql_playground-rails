@@ -479,17 +479,17 @@
   <% if GraphqlPlayground::Rails.config.playground_css_url.present? %>
   <link rel="stylesheet" href="<%= GraphqlPlayground::Rails.config.playground_css_url %>" />
   <% else %>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/static/css/index.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@apollographql/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/static/css/index.css" />
   <% end %>
   <% if GraphqlPlayground::Rails.config.logo %>
   <link rel="shortcut icon" href="<%= GraphqlPlayground::Rails.config.favicon %>" />
   <% else %>
-  <link rel="shortcut icon" href="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/favicon.png" />
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/npm/@apollographql/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/favicon.png" />
   <% end %>
   <% if GraphqlPlayground::Rails.config.playground_js_url.present? %>
   <script src="<%= GraphqlPlayground::Rails.config.playground_js_url %>"></script>
   <% else %>
-  <script src="//cdn.jsdelivr.net/npm/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/static/js/middleware.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@apollographql/graphql-playground-react@<%= GraphqlPlayground::Rails.config.playground_version %>/build/static/js/middleware.js"></script>
   <% end %>
 </head>
 <body>

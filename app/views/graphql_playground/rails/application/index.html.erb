@@ -47,10 +47,7 @@
     root.classList.add('playgroundIn');
 
     GraphQLPlayground.init(root, {
-      "canSaveConfig": false,
-      "endpoint": "<%= get_endpoint_url %>",
-      "settings": <%= raw(GraphqlPlayground::Rails.config.all_settings.to_json) %>,
-      "headers": <%= raw(GraphqlPlayground::Rails.config.resolve_headers(self).to_json) %>
+      "endpoint": "<%= get_endpoint_url %>"
     });
   });
 </script>
